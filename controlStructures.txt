@@ -1,0 +1,72 @@
+1. Process customer record
+
+input -
+
+string of customersName
+integer of purchaseAmount
+taxCode 0 ,1 , 2 , 3
+
+processes-
+
+purchaseAmount is then multiplied by the taxCodePercentage based on what tax code they 
+selected to get totalAmountDue
+
+output- 
+
+displays customer name
+displays totalAmountDue
+displays sales tax 
+
+
+
+Userinput customersName, purchaseAmount, taxCode 
+Check if customerName is string, purchaseAmount is an integer and taxCode is from 0 - 3
+if taxCode = 0 then
+	totalAmountDue = 0;
+if taxCode = 1 then
+	totalAmountDue = purchaseAmount * .3;
+else if taxCode = 2 then
+	totalAmountDue = purchaseAmount * .5;
+else if taxCode = 3 then
+	totalAmountDue = purchaseAmount * .7;
+else 
+ system.out.print("error either wrong tax code selected or no tax code was entered");
+
+Output customerName;
+Output purchaseAmount;
+Output totalAmountDue;
+
+Selection Control Structure
+If(taxCode === 0) 
+then
+	totalAmountDue = 0;
+else if(taxCode === 1)
+then 
+	totalAmountDue = purchaseAmount * .3;
+	system.out.println("sales tax 3%);
+else if(taxCode === 2)
+then 
+	totalAmountDue = purchaseAmount * .5;
+	system.out.println("sales tax 5%);
+else if(taxcode === 3)
+then 
+	totalAmountDue = purchaseAmount * .7;
+	system.out.println("sales tax 7%);
+Else
+	system.out.println("error either wrong tax code selected or no tax code was entered");
+ENDIF
+
+Output customerName;
+Output 
+
+testcase1(john, 3420.34, 1)
+result: customer: john, sales tax 3%, 1,026.10
+
+testcase2(bob, 1000, 3)
+result: customer: bob, sales tax 7%, 700
+
+
+
+
+
+
