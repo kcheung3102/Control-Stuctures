@@ -57,13 +57,18 @@ Else
 ENDIF
 
 Output customerName;
-Output 
+Output sales tax;
+Output totalAmountDue;
 
 testcase1(john, 3420.34, 1)
 result: customer: john, sales tax 3%, 1,026.10
 
 testcase2(bob, 1000, 3)
 result: customer: bob, sales tax 7%, 700
+
+
+2.Calculate employee's pay 
+
 
 
 
